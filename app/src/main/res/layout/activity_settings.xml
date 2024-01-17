@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:elevation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/white"
+                app:navigationIcon="@drawable/ic_menu_back_24"
+                android:background="@color/colorPrimary"
+                />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_hash"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp">
+
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="10dp"
+                            app:tint="@color/black"
+                            app:srcCompat="@drawable/ic_info" />
+
+                        <TextView
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:gravity="left|center_vertical|center_horizontal|center"
+                            android:padding="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="@string/version_label" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvCurrentVersion"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="V 1.0"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    app:tint="@color/black"
+                    app:srcCompat="@drawable/ic_notify" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="60dp">
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_notification" />
+
+                    <TextView
+                        android:id="@+id/tvNotificationTag"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        app:fontFamily="@font/medium"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_notification"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Switch
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:id="@+id/switchButtonNotification"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="60dp">
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Night Mode" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/medium"
+                        android:text="You can Switch Your App to Dark and Light Mode"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_button_animation"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayoutMoreApp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        app:tint="@color/black"
+                        app:srcCompat="@drawable/round_exit_to_app_24" />
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/more_app" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayoutPolicyPrivacy"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        app:tint="@color/black"
+                        app:srcCompat="@drawable/ic_privacy" />
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:gravity="left|center_vertical|center_horizontal|center"
+                        android:padding="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-1dp"
+                        android:text="@string/policy_privacy" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

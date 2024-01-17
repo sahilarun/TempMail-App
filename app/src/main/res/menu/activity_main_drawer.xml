@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" xmlns:maxads="http://schemas.applovin.com/android/1.0">
+    <group android:id="@+id/top" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_actions_settings" android:id="@+id/nav_setting" android:title="@string/settings"/>
+    </group>
+    <group android:id="@+id/mid" android:checkableBehavior="single">
+
+
+        <item android:icon="@drawable/ic_info" android:id="@+id/nav_about" android:title="@string/about"/>
+        <item android:icon="@drawable/ic_ic_actions_star" android:id="@+id/nav_rate" android:title="@string/rate_this_app"/>
+        <item android:icon="@drawable/ic_share" android:id="@+id/nav_share" android:title="@string/share_this_app"/>
+        <item android:icon="@drawable/ic_ic_contact_mail" android:id="@+id/nav_feedback" android:title="@string/feedback_amp_bugs"/>
+        <item android:icon="@drawable/ic_instagram_outlined" android:id="@+id/nav_insta" android:title="@string/follow_us_on_instagram"/>
+    </group>
+</menu>

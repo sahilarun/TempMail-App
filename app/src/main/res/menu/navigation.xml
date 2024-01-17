@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_email"
+        android:icon="@drawable/ic_menu_email"
+        android:title="Email" />
+
+    <item
+        android:id="@+id/navigation_inbox"
+        android:icon="@drawable/ic_menu_inbox"
+        android:title="Inbox" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_menu_history"
+        android:title="History" />
+
+</menu>
