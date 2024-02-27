@@ -1,4 +1,4 @@
-![Repo Banner](https://cdn.discordapp.com/attachments/1196040057853857842/1197105389892800622/New_Project_2_FF79676.png?ex=65ba0e46&is=65a79946&hm=013222c68086beb6396f1a6321ffb8016a71f6aa724340e4ea8144ffb9fe0b1c&)
+![Repo Banner](https://cdn.discordapp.com/attachments/1209916435980091492/1211913107174330370/tem1.jpg?ex=65efed09&is=65dd7809&hm=acf282d1d095da77f7b1eabb19df9a8aae51067aab9ae1b9600b9194df86d40d&)
 
 # TempMail
 
@@ -16,7 +16,7 @@ An Open-Source Temp Mail App for all your needs!
 - **Facebook Ads:** Monetize your app further with Facebook Ads, reaching a broader audience.
 
 ## Screenshots
-<img src="https://cdn.discordapp.com/attachments/1196040057853857842/1197105390240944169/New_Project_2_21A11D8.png?ex=65ba0e46&is=65a79946&hm=2a228d92e85d57d3819692b98c469a3a81240013ca4465807c44653b27e8fd8d&"> <img src="https://cdn.discordapp.com/attachments/1196040057853857842/1197105390740054046/New_Project_2_7AD5925.png?ex=65ba0e46&is=65a79946&hm=d7f3ff04d7ef8d7343300d2e312d178c9eca700276fbae4208bfd9575612ece6&">
+<img src="https://cdn.discordapp.com/attachments/1209916435980091492/1211913107526393876/tem2.jpg?ex=65efed09&is=65dd7809&hm=dbf63970dfc01d89ae8f176827df213ff344cf1efb43e1fe4d66938dc11f44f9&"> <img src="https://cdn.discordapp.com/attachments/1209916435980091492/1211913108197609512/tem4.jpg?ex=65efed09&is=65dd7809&hm=e02cfa57685635e9ee705fe5b3cc329fb18ff449c47deabae71a203319dcc103&">
 
 ## Building from Source
 
